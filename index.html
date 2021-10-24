@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    <title>Cadastro Pessoal</title>
+</head>
+
+<body>
+    <div class="box">
+        <form autocomplete="on">
+            <fieldset>
+                <legend>
+                    <h1><b>Cadastro Pessoal</b></h1>
+                </legend>
+                <p class="subtitulo">Complete com sua informações</p>
+                <br>
+
+                <div class="campo">
+                    <label><b>Nome Completo</b></label> <br>
+                    <input type="text" name="nome_cliente" id="primeiroNome" placeholder="Nome" value="" required>
+                    <input type="text" name="nome_cliente" id="segundoNome" placeholder="Sobrenome" value="" required>
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput"><b>CPF</b></label> <br>
+                    <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" \ pattern="[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required>
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput"><b>RG</b></label> <br>
+                    <input type="text" name="rg" class="inputUser" placeholder="xx.xxx.xxx-x" \ pattern="[0-9]{2}.?[0-9]{3}.?[0-9]{3}-?[a-zA-Z0-9]{1}">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <p><b>Sexo</b></p>
+                    <input type="radio" class="feminino" name="genero" value="feminino">
+                    <label for="feminino" class="sexo">Feminino</label>
+                    <br>
+                    <input type="radio" class="masculino" name="genero" value="masculino">
+                    <label for="masculino" class="sexo">Masculino</label>
+                    <br>
+                    <input type="radio" class="outro" name="genero" value="outro">
+                    <label for="outro" class="sexo">Outro</label>
+                </div>
+                <br><br>
+                <div>
+                    <label><b>Data de Nascimento : </b></label>
+                    <input type="date" name="data" class="dataNasc">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput "><b>Email</b></label> <br>
+                    <input type="email" name="email" class="inputUser" placeholder="name@example.com">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label><b>Telefone Celular</b></label> <br>
+                    <input type="tel" name="celular" id="ddd" placeholder="DDD" pattern="[0-9]{2}" required>
+                    <input type="tel" name="celular" id="celular" placeholder="Celular" pattern="[9]{1}[0-9]{4}-?[0-9]{4}" required>
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label><b>Telefone Fixo</b></label> <br>
+                    <input type="tel" name="fixo" class="fixo" placeholder="Telefone Fixo">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label><b>UF</b></label>
+                    <select name="estado" class="estado">
+                        <option selected disabled value=" ">Selecione</option>
+                        <option>RO</option>
+                        <option>AC</option>
+                        <option>AM</option>
+                        <option>RR</option>
+                        <option>PA</option>
+                        <option>AP</option>
+                        <option>TO</option>
+                        <option>MA</option>
+                        <option>PI</option>
+                        <option>CE</option>
+                        <option>RN</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>AL</option>
+                        <option>SE</option>
+                        <option>BA</option>
+                        <option>MG</option>
+                        <option>ES</option>
+                        <option>RJ</option>
+                        <option>SP</option>
+                        <option>SC</option>
+                        <option>RS</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>GO</option>
+                        <option>DF</option>
+                    </select>
+                    <label><b>Cidade</b></label>
+                    <input type="text" name="cidade" class="cidade" placeholder="Cidade">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput"><b>CEP</b></label> <br>
+                    <input type="number" name="cep" class="inputUser" placeholder="CEP" pattern="[0-9]{2}[0-9]{3}-?[0-9]{3}" min="0">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput"><b>Bairro</b></label> <br>
+                    <input type="text" name="bairro" class="inputUser" placeholder="Bairro">
+                </div>
+                <br><br>
+                <div class="campo">
+                    <label class="labelInput"><b>Endereço:</b></label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+                    <label class="labelInput "><b>Nº:</b></label>
+                    <input type="number" name="endereco" id="numero" placeholder="Número" min="0" required>
+                </div>
+                <button type="submit" id="botao" onclick="enviar()">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+</html>
